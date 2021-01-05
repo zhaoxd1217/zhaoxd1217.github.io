@@ -1,7 +1,7 @@
 <!--
  * @Author: liuzexuan
  * @Date: 2021-01-05 14:32:19
- * @LastEditTime: 2021-01-05 14:33:52
+ * @LastEditTime: 2021-01-05 16:45:45
  * @LastEditors: liuzexuan
 -->
 <!DOCTYPE html>
@@ -31,9 +31,9 @@
         $(function () {
             $.ajax({
                 url: "./data.json",
-                type: 'POST',
+                type: 'get',
                 data: {},
-                dataType: "jsonp",
+                dataType: "json",
                 success: function (data) {
                     var json = JSON.parse(data);
                     var result = json.result;

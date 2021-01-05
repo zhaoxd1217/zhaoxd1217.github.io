@@ -1,7 +1,7 @@
 <!--
  * @Author: liuzexuan
  * @Date: 2021-01-05 14:32:19
- * @LastEditTime: 2021-01-05 16:45:45
+ * @LastEditTime: 2021-01-05 16:48:19
  * @LastEditors: liuzexuan
 -->
 <!DOCTYPE html>
@@ -35,8 +35,7 @@
                 data: {},
                 dataType: "json",
                 success: function (data) {
-                    var json = JSON.parse(data);
-                    var result = json.result;
+                    var result = data.result;
                     var content = "";
                     for (var i = 0; i < result.length; i++) {
                         var con = result[i];
